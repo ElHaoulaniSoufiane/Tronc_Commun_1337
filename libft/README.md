@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by soel-hao*
+# *This project has been created as part of the 42 curriculum by soel-hao*
 
 ## Description
 The goal of this project is build a foundational C libary from scratch. the let you dive in the low-level mechanisms of standard libc functions, this custom library will serve as the primary toolkit for all the C curriculum assignments.
