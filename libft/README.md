@@ -24,4 +24,4 @@ To compile and manage the library, run the following commands at the root of the
 * **[Linux man pages](https://man7.org/linux/man-pages/):** Used for check the manual of the functions and how it's work.
 * **[Makefile](https://makefiletutorial.com/):** Use This tutorial for understanding the Makefile and how it's works.
 * **[Youtube C](https://www.youtube.com/@onaecO/):** I Use this channel to understand deeply the concept.
-* **AI Usage:** I used DeepSeek to dive deeply into the functions and understand their underlying behavior..
+* **AI Usage:** I used DeepSeek to dive deeply into the functions and understand their underlying behavior.
