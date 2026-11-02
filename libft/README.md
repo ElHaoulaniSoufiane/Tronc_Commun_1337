@@ -42,5 +42,5 @@ Functions to create and manipulate a custom `t_list` singly linked list structur
 
 ## Resources
 * **Manual of Functions:** Unix `man` pages (e.g., `man 3 strlen`, `man 3 malloc`) were used extensively as the primary reference for understanding the standard behavior, parameters, and return values of libc functions.
-* **W3Schools:** Used as a supplementary resource for reviewing C syntax, data types, and core programming logic.
+* **[W3Schools (C Tutorial)](https://www.w3schools.com/c/):** Used as a supplementary resource for reviewing C syntax, data types, and core programming logic.
 * **AI Usage:** AI was used as a learning tool to help understand new programming concepts, dive deeply into complex topics under the hood, and identify potential edge cases during the implementation of the functions.
