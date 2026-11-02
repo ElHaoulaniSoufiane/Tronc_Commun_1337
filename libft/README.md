@@ -1,27 +1,46 @@
-*This project has been created as part of the 42 curriculum by soel-hao*
+*This project has been created as part of the 42 curriculum by soel-hao.*
+
+# Libft
 
 ## Description
-The goal of this project is build a foundational C libary from scratch. the let you dive in the low-level mechanisms of standard libc functions, this custom library will serve as the primary toolkit for all the C curriculum assignments.
-
-## Library Details
-The library is structured into three main components:
-
-* **Part 1 - Libc Functions:** Direct reimplementations of standard C library functions (such as `strlen`, `memcpy`, and `atoi`) that strictly match their manual page specifications to demonstrate how they operate under the hood.
-* **Part 2 - Additional Functions:** Custom utility functions requiring dynamic memory allocation for advanced string manipulation, arrays, and formatting, including `ft_split` and `ft_itoa`.
-* **Part 3 - Linked Lists:** A comprehensive suite of functions designed to initialize, iterate, map, and free a custom `t_list` data structure for dynamic data management.
+The `libft` project is the first milestone in the 42 curriculum. Its goal is to create a custom C library that reimplements standard libc functions, along with additional utility functions and linked list operations. This foundational library serves as a robust toolset that will be used across all subsequent C programming projects in the curriculum, requiring a deep understanding of memory management, pointer arithmetic, and algorithmic logic.
 
 ## Instructions
-This project includes a `Makefile` that compiles the source files into a static library named `libft.a`. All files are compiled using `cc` with the strict flags `-Wall -Wextra -Werror`.
+To compile and use the library, run the following commands in your terminal.
 
-To compile and manage the library, run the following commands at the root of the repository:
+**Compilation rules:**
+* `make` (or `make all`): Compiles the standard mandatory functions and generates the `libft.a` static library.
+* `make bonus`: Compiles the library.
+* `make clean`: Removes all `.o` (object) files.
+* `make fclean`: Removes all `.o` files and the `libft.a` static library.
+* `make re`: Performs a full recompilation by running `fclean` followed by `all`.
 
-* `make` or `make all`: Compiles the source code and generates the `libft.a`.
-* `make clean`: Removes the generated object (`.o`) files, keeping the directory.
-* `make fclean`: Removes the object files as well as the compiled `libft.a`.
-* `make re`: Forces a full recompilation by executing `fclean` followed by `all`.
+## Library Details
+The library is divided into three main parts:
+
+### 1. Libc Functions
+Standard C library functions reimplemented with the `ft_` prefix:
+* **Character Checks:** `ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_isascii`, `ft_isprint`
+* **Character Conversion:** `ft_toupper`, `ft_tolower`
+* **String Manipulation:** `ft_strlen`, `ft_strlcpy`, `ft_strlcat`, `ft_strchr`, `ft_strrchr`, `ft_strncmp`, `ft_strnstr`, `ft_strdup`
+* **Memory Operations:** `ft_memset`, `ft_bzero`, `ft_memcpy`, `ft_memmove`, `ft_memchr`, `ft_memcmp`, `ft_calloc`
+* **Conversion:** `ft_atoi`
+
+### 2. Additional Functions
+Custom functions for string manipulation and I/O operations:
+* **String Utilities:** `ft_substr`, `ft_strjoin`, `ft_strtrim`, `ft_split`, `ft_strmapi`, `ft_striteri`
+* **Integer Conversion:** `ft_itoa`
+* **File Descriptor I/O:** `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`
+
+### 3. Linked List Functions
+Functions to create and manipulate a custom `t_list` singly linked list structure:
+* **Node Creation:** `ft_lstnew`
+* **List Insertion:** `ft_lstadd_front`, `ft_lstadd_back`
+* **List Information:** `ft_lstsize`, `ft_lstlast`
+* **Memory Management:** `ft_lstdelone`, `ft_lstclear`
+* **Iteration & Mapping:** `ft_lstiter`, `ft_lstmap`
 
 ## Resources
-* **[Linux man pages](https://man7.org/linux/man-pages/):** Used for check the manual of the functions and how it's work.
-* **[Makefile](https://makefiletutorial.com/):** Use This tutorial for understanding the Makefile and how it's works.
-* **[Youtube C](https://www.youtube.com/@onaecO/):** I Use this channel to understand deeply the concept.
-* **AI Usage:** I used DeepSeek to dive deeply into the functions and understand their underlying behavior.
+* **Manual of Functions:** Unix `man` pages (e.g., `man 3 strlen`, `man 3 malloc`) were used extensively as the primary reference for understanding the standard behavior, parameters, and return values of libc functions.
+* **W3Schools:** Used as a supplementary resource for reviewing C syntax, data types, and core programming logic.
+* **AI Usage:** AI was used as a learning tool to help understand new programming concepts, dive deeply into complex topics under the hood, and identify potential edge cases during the implementation of the functions.
